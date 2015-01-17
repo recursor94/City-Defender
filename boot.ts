@@ -16,6 +16,11 @@ module CityDefender{
 
 	    else {
 		//mobile settings
+		this.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL;
+		this.stage.forceLandscape=true;
+		this.stage.scale.pageAlignHorizontally = true;
+		this.stage.scale.setScreenSize(true);
+
 	    }
 
 	    this.game.start('Preloader', true, false);
